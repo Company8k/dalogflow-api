@@ -5,14 +5,8 @@
   
   <groupId>com.googleapis</groupId>
   <artifactId>dialogflow-api</artifactId>
-  <version>0.2</version>
-  
-  <parent>
-    <groupId>tk.eigh</groupId>
-    <artifactId>bot-parent</artifactId>
-    <version>0.0.1</version>
-  </parent>
-  
+  <version>0.2.1</version>
+    
   <distributionManagement>
     <repository>
       <id>bintray-8k-maven</id>
