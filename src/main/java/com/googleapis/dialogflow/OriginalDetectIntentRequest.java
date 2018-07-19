@@ -9,5 +9,5 @@ public class OriginalDetectIntentRequest {
     /** Optional. The version of the protocol used for this request. This field is AoG-specific. */
     public String version;
     /** Optional. This field is set to the value of QueryParameters.payload field passed in the request. */
-    public ObjectNode payload;
+    public Object payload; //TODO generic or something similar
 }

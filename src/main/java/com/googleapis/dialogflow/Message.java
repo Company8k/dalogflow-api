@@ -6,7 +6,7 @@ public class Message {
   public Platform platform;
   public Text text;
   public class Text {
-    public String text;
+    public String[] text;
   }
   public Image image;
   public class Image {
