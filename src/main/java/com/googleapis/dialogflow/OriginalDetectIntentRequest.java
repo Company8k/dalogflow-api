@@ -1,7 +1,5 @@
 package com.googleapis.dialogflow;
 
-import com.fasterxml.jackson.databind.node.ObjectNode;
-
 
 public class OriginalDetectIntentRequest {
     /** The source of this request, e.g., google, facebook, slack. It is set by Dialogflow-owned servers. */
