@@ -6,7 +6,10 @@ public class Message {
   public Platform platform;
   public Text text;
   public class Text {
-    public String[] text;
+    public final  String[] text;
+    public Text(String text){
+      this.text = new String[]{text};
+    }
   }
   public Image image;
   public class Image {
@@ -29,7 +32,10 @@ public class Message {
       public String postback;
     }
   }
-  public SimpleResponse[] simpleResponses;
+  public SimpleResponseWrapper simpleResponses;
+  public class SimpleResponseWrapper{
+    public SimpleResponse[] simpleResponses;
+  }
   public class SimpleResponse{
     public String textToSpeech;
     public String ssml;
@@ -62,11 +68,11 @@ public class Message {
   public ListSelect listSelect;
   public class ListSelect{
     public String title;
-    public Item[] itmes;
+    public Item[] items;
   }
   public CarouselSelect carouselSelect;
   public class CarouselSelect {
-    public Item[] item;
+    public Item[] items;
   }
   public class Item{
     public SelectItemInfo info;
